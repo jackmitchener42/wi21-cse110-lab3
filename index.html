@@ -3,7 +3,7 @@
 
 <head>
     <title>Jack Mitchener User Page</title>
-    <!--<link> IDK WHAT TO PUT HERE YET-->
+    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -17,7 +17,9 @@
 
     <main>
         <section>
+            <header>
             <h1>Jack Mitchener User Page</h1>
+            </header>
             <p>I am a <em>Math-Computer Science</em> student. I currently am waiting to hear back from law schools that I applied
                 to back in October. So far I have heard back from UCLA and was admitted! I am very excited about this
                 and am hoping to hear back more good news in the next couple months. 
@@ -28,28 +30,45 @@
                 trying to protect their products.
             </p>
             <br>
-            <p>An important aspect for my career is learning how to code. Even a basic understanding is helpful, such as knowing what <code>cout</code> does.</code></p>
+            <p>An important aspect for my career is learning how to code. Even a basic understanding is helpful, such as knowing what <code>cout</code> does.</p>
             <canvas id="myCanvas" width="200" height="100"></canvas>
             <p>Above is a canvas that can be drawn on using JavaScript, another helpful thing to know for my future.</p>
-            <iframe src="MyFuturePlans.html"name="iframe_example" height="200" width="300" title="Iframe Example"></iframe>
+            <aside>
+                <h4>Future Goals</h4>
+            <iframe src="MyFuturePlans.html" name="iframe_example" height="200" width="300" title="Iframe Example"></iframe>
             <p>If you are curious about my Future Goals visit the My Future Plans page, depicted in the iframe above.</p>
+            </aside>
             <br>
         </section>
-        <!--    <section>
-            <h2>Coding Languages I have Used</h2>
-
-        </section>-->
         <p>The play button below will begin the sound of a bell ringing:</p>
         <audio controls>
             <source src="bell-ringing-01.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
         </audio>
         <br>
-        <p>The video below is my group's presentation of a basic data science project for COGS 108. You can watch by clicking play:</p>
+        <details><summary>COGS 108</summary>
+            <p>The video below is my group's presentation of a basic data science project for COGS 108. You can watch by clicking play:</p>
+        </details>
         <video width="320" height="240" controls>
             <source src="COGS_108_Project_Thing.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
+
+        <br>
+        <table style="border:1px solid black">
+            <caption>COGS 108 Project Time Spent/Fun</caption>
+            <colgroup>
+                <col span="2" style="background-color:burlywood">
+              </colgroup>
+            <tr>
+                <th style="border: 1px solid black">Time Spent on Project</th>
+                <th style="border: 1px solid black">Hours of Fun on the Project</th>
+              </tr>
+              <tr>
+                <td style="border: 1px solid black">100 Hours</td>
+                <td style="border: 1px solid black">10 Hours</td>
+              </tr>
+        </table>
         <pre>----------Below you will find a copy of my Resume from one year ago.--------</pre>
 
         <hr>
@@ -115,8 +134,12 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <template>
+            <div class="myClass">This content is hidden unless we use JS </div>
+          </template>
+        <button type="button" onclick="alert('Congrats you found a useless button by reaching the bottom!')">Click Me!</button>
     </main>
-
+    <footer>Jack created this website for a Lab for CSE 110</footer>
 </body>
-
 </html>
