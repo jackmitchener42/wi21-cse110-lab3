@@ -31,7 +31,7 @@ Adjacent sibling combinator (element ~ element)
 
 /* element selector */
 p{
-    text-color: white;
+    color: white;
     /* third use of relative unit */
     max-width:70%;
     min-width:30%;
@@ -107,6 +107,7 @@ p[id]{
     display:flex;
     align-items:stretch;
     align-content:justify;
+    
 }
 
 .item{
@@ -114,5 +115,32 @@ p[id]{
     flex-grow: 4;
     flex-shrink: 3;
     align-self: auto;
+    background-color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 
 }
+.grid-container {
+    display: grid;
+    background-color: #0b24b6;
+    padding: 10px;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap:10px 5px;
+    align-items:stretch;
+  }
+  .grid-item {
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    justify-self: start;
+    place-self: center;
+  }
