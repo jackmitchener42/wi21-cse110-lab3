@@ -40,3 +40,19 @@ img,form{
     /* how to do rounded border */
     border-radius: 4px;
 }
+
+/* box model long */
+nav {
+    background-color: lightgrey;
+    width: 12pc;
+    height:1.5pc;
+    border: 10pt solid green;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 5vmin;
+    margin-bottom:5vmin;
+    margin-left:5vmin;
+    margin-right:5vmin;
+  }
