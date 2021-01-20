@@ -1,14 +1,14 @@
 /*a comment on the css file*/
 /*
 List of Selectors to Use:
-Class Selector (.class) added
+---Class Selector (.class)
 ID Selector (#id)
 Universal Selector (*)
-Element Selector (element) added
+---Element Selector (element)
 Attribute Selector (e.g. [attribute=foo])
-Pseudo-class Selectors (e.g. p::hover) added
+--- Pseudo-class Selectors (e.g. p::hover)
 Grouping / Combinators
-Selector List (element, element)
+--- Selector List (element, element)
 Descendant Combinator (element element)
 Child Combinator (element > element)
 General sibling combinator (element + element)
@@ -31,4 +31,12 @@ table:hover{
 
 body{
     background-color: hsl(341.1, 31%, 66%);
+}
+
+img,form{
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    /* how to do rounded border */
+    border-radius: 4px;
 }
