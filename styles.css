@@ -14,7 +14,11 @@ Grouping / Combinators
 General sibling combinator (element + element)
 Adjacent sibling combinator (element ~ element)
 Combining Two Selectors (element.class)*/
+
+/* add Oswald font */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/* need to put in one more relative unit */
 
 *{
     font-family:'Oswald', sans-serif;
@@ -29,7 +33,13 @@ Combining Two Selectors (element.class)*/
 p{
     text-color: white;
 }
-
+/* combining two selectors */
+p.dis1{
+    display: block;
+}
+p.dis2{
+    display: none;
+}
 /* pseudo class selector */
 table:hover{
     color: #1861C1;
