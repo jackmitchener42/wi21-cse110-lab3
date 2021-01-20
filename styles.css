@@ -4,7 +4,7 @@ List of Selectors to Use:
 ---Class Selector (.class)
 --- ID Selector (#id)
 --- Universal Selector (*)
----Element Selector (element)
+--- Element Selector (element)
 --- Attribute Selector (e.g. [attribute=foo])
 --- Pseudo-class Selectors (e.g. p::hover)
 Grouping / Combinators
@@ -101,4 +101,18 @@ div > h3,h4,h5{
 p[id]{
     position: static;
     left: 200px;
+}
+
+.container{
+    display:flex;
+    align-items:stretch;
+    align-content:justify;
+}
+
+.item{
+    order: 5;
+    flex-grow: 4;
+    flex-shrink: 3;
+    align-self: auto;
+
 }
