@@ -3,17 +3,23 @@
 List of Selectors to Use:
 ---Class Selector (.class)
 ID Selector (#id)
-Universal Selector (*)
+--- Universal Selector (*)
 ---Element Selector (element)
 Attribute Selector (e.g. [attribute=foo])
 --- Pseudo-class Selectors (e.g. p::hover)
 Grouping / Combinators
 --- Selector List (element, element)
-Descendant Combinator (element element)
-Child Combinator (element > element)
+--- Descendant Combinator (element element)
+--- Child Combinator (element > element)
 General sibling combinator (element + element)
 Adjacent sibling combinator (element ~ element)
 Combining Two Selectors (element.class)*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    font-family:'Oswald', sans-serif;
+}
+
 /* class selector */
 .row{
     color: rgb(255, 204, 153);
@@ -21,7 +27,7 @@ Combining Two Selectors (element.class)*/
 
 /* element selector */
 p{
-    color: white;
+    text-color: white;
 }
 
 /* pseudo class selector */
@@ -56,3 +62,14 @@ nav {
     margin-left:5vmin;
     margin-right:5vmin;
   }
+
+/* descendant combinator */
+div li{
+    background-color:darkred;
+}
+/* child combinator */
+div > h3,h4,h5{
+    text-decoration:underline;
+    text-decoration-color:black;
+    text-align: justify;
+}
