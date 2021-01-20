@@ -18,11 +18,16 @@ Adjacent sibling combinator (element ~ element)
 /* add Oswald font */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
-/* need to put in one more relative unit */
-
+/* universal selector */
 *{
     font-family:'Oswald', sans-serif;
 }
+
+/* media query to change color when the window size is too small */
+@media only screen and (min-width: 600px) {
+    body {
+      background-color: white;
+    }
 
 /* class selector */
 .row{
@@ -144,3 +149,13 @@ p[id]{
     justify-self: start;
     place-self: center;
   }
+
+/* general sibling selector */
+div ~ p{
+    color: lime;
+}
+
+/* adjacent sibling selector */
+br  + p{
+    color: red;
+}
