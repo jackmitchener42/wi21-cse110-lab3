@@ -2,10 +2,10 @@
 /*
 List of Selectors to Use:
 ---Class Selector (.class)
-ID Selector (#id)
+--- ID Selector (#id)
 --- Universal Selector (*)
 ---Element Selector (element)
-Attribute Selector (e.g. [attribute=foo])
+--- Attribute Selector (e.g. [attribute=foo])
 --- Pseudo-class Selectors (e.g. p::hover)
 Grouping / Combinators
 --- Selector List (element, element)
@@ -13,7 +13,7 @@ Grouping / Combinators
 --- Child Combinator (element > element)
 General sibling combinator (element + element)
 Adjacent sibling combinator (element ~ element)
-Combining Two Selectors (element.class)*/
+--- Combining Two Selectors (element.class)*/
 
 /* add Oswald font */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
@@ -85,4 +85,16 @@ div > h3,h4,h5{
     text-decoration:underline;
     text-decoration-color:black;
     text-align: justify;
+}
+
+/* by id */
+#iframeboi{
+    position: relative;
+    left:50px;
+}
+
+/* by attribute */
+p[id]{
+    position: static;
+    left: 200px;
 }
