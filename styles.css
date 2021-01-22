@@ -54,7 +54,7 @@ table:hover{
 }
 /* pseudo class selector */
 button:active{
-    color:pink;
+    color: hsla(300,100%,50%, .5);
 }
 
 body{
@@ -74,7 +74,7 @@ nav {
     background-color: lightgrey;
     width: 12pc;
     height:1.5pc;
-    border: 10pt solid green;
+    border: 10pt solid rgba(0, 156, 37, 1);
     padding-top: 2em;
     padding-bottom: 2em;
     padding-left: 2em;
